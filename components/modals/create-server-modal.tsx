@@ -40,7 +40,7 @@ const CreateServerModal = () => {
 
   const router = useRouter();
 
-  const isModelOpen = isOpen && type === "createServer";
+  const isModalOpen = isOpen && type === "createServer";
 
   const form = useForm({
     defaultValues: {
@@ -72,7 +72,7 @@ const CreateServerModal = () => {
   };
 
   return (
-    <Dialog open={isModelOpen} onOpenChange={handleClose}>
+    <Dialog open={isModalOpen} onOpenChange={handleClose}>
       <DialogContent className="bg-white text-black p-0 overflow-hidden">
         <DialogHeader className="pt-8 px-6">
           <DialogTitle className="text-2xl text-center font-bold">
