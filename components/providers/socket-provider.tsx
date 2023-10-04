@@ -14,13 +14,13 @@ type SocketContextType = {
   isConnected: boolean;
 };
 
-const socketContext = createContext<SocketContextType>({
+const SocketContext = createContext<SocketContextType>({
   socket: null,
   isConnected: false,
 });
 
 export const useSocket = () => {
-  return useContext(socketContext);
+  return useContext(SocketContext);
 };
 
 const SocketProvider = ({ children }: { children: React.ReactNode }) => {
@@ -35,6 +35,7 @@ const SocketProvider = ({ children }: { children: React.ReactNode }) => {
         addTrailingSlash: false,
       }
     );
+
     socketInstance.on("connect", () => {
       setIsConnected(true);
     });
@@ -44,11 +45,15 @@ const SocketProvider = ({ children }: { children: React.ReactNode }) => {
     });
 
     setSocket(socketInstance);
+
+    return () => {
+      socketInstance.disconnect();
+    };
   }, []);
   return (
-    <socketContext.Provider value={{ socket, isConnected }}>
+    <SocketContext.Provider value={{ socket, isConnected }}>
       {children}
-    </socketContext.Provider>
+    </SocketContext.Provider>
   );
 };
 
