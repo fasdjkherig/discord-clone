@@ -1,16 +1,16 @@
 "use client";
 
-import React from "react";
 import * as z from "zod";
 import axios from "axios";
-import { useModal } from "@/hooks/use-modal-store";
-import { useRouter } from "next/navigation";
+import qs from "query-string";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Plus } from "lucide-react";
-import qs from "query-string";
+import { useRouter } from "next/navigation";
+
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { useModal } from "@/hooks/use-modal-store";
 import EmojiPicker from "@/components/emoji-picker";
 
 interface ChatInputProps {
@@ -23,6 +23,7 @@ interface ChatInputProps {
 const formSchema = z.object({
   content: z.string().min(1),
 });
+
 const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
   const { onOpen } = useModal();
   const router = useRouter();
