@@ -4,7 +4,7 @@
 
 This is a repository for Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ZbX4Ok9YX94)
+[Website link](https://discord-clone-production-cbf6.up.railway.app/)
 
 Features:
 
