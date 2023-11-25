@@ -65,7 +65,7 @@ NEXT_PUBLIC_LIVEKIT_URL=
 
 ### Setup Prisma
 
-Add MySQL Database (I used Neon -you can use any alternative-)
+Add MySQL Database I used Neon (you can use any alternative)
 
 ```shell
 npx prisma generate
