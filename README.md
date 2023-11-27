@@ -17,13 +17,9 @@ Features:
 - Member management (Kick, Role change Guest / Moderator)
 - Unique invite link generation & full working invite system
 - Infinite loading for messages in batches of 10 (tanstack/query)
-- Server creation and customization
 - Beautiful UI using TailwindCSS and ShadcnUI
 - Full responsivity and mobile UI
 - Light / Dark mode
-- Websocket fallback: Polling with alerts
-- ORM using Prisma
-- MySQL database using Planetscale
 - Authentication with Clerk
 
 ### Prerequisites
