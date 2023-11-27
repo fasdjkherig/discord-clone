@@ -1,4 +1,4 @@
-# Fullstack Discord Clone: Next.js 13, React, Socket.io, Prisma, Tailwind, MySQL | Full Course 2023
+# Developing the Front-end interfaces for the chat application(Discord Clone)
 
 ![dicord-image](https://github.com/fasdjkherig/discord-clone/blob/main/public/discord.png)
 
@@ -82,3 +82,27 @@ Running commands with npm `npm run [command]`
 | command | description                              |
 | :------ | :--------------------------------------- |
 | `dev`   | Starts a development instance of the app |
+
+Technologies:
+
+- html
+- css
+- javascript
+- typescript
+- react
+- react-hooks
+- nextjs13
+- clerk authentication
+- radix-ui
+- emoji-mart
+- axios
+- shadcn-ui
+- livekit
+- socket.io
+- tailwind
+- react-hook-form
+- zod
+- zustand
+- react-query
+- uploadThing
+- query-string
