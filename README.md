@@ -4,7 +4,7 @@
 
 This is a repository for Frontend Discord Clone
 
-[Website link](https://discord-clone-production-cbf6.up.railway.app/)
+[Website link](https://discord-clone-9lw4.vercel.app/)
 
 Features:
 
